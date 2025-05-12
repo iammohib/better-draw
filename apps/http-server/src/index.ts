@@ -1,8 +1,12 @@
 import express from "express";
+import { prismaClient } from "@repo/db/client";
 
 const app = express();
 
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
+  // db test purpose
+  // const user = await prismaClient.user.findMany();
+  // console.log(user);
   res.send("Homepage");
 });
 

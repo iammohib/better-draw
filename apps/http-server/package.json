@@ -17,6 +17,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@repo/db": "workspace:*",
     "express": "^5.1.0"
   }
 }
