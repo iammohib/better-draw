@@ -5,8 +5,8 @@ const app = express();
 
 app.get("/", async (req, res) => {
   // db test purpose
-  // const user = await prismaClient.user.findMany();
-  // console.log(user);
+  const user = await prismaClient.user.findMany();
+  console.log(user);
   res.send("Homepage");
 });
 
