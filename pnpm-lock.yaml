@@ -142,6 +142,19 @@ importers:
         specifier: ^8.31.0
         version: 8.31.0(eslint@9.26.0)(typescript@5.8.2)
 
+  packages/server-common:
+    dependencies:
+      '@types/node':
+        specifier: ^22.15.3
+        version: 22.15.3
+    devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+
   packages/types:
     dependencies:
       zod:
